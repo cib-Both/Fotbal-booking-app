@@ -7,7 +7,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-blue-800 text-white p-4 shadow-md">
+    <nav className="bg-blue-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-3xl font-bold tracking-wide">⚽Football Booking</h1>
         <div className="space-x-6 text-lg font-bold">

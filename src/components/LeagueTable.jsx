@@ -1,56 +1,46 @@
-import React from "react";
-
-const teams = [
-  {
-    id: 1,
-    name: "Preah Khan Reach Svay Rieng FC",
-    played: 5,
-    won: 5,
-    drawn: 0,
-    lost: 0,
-    goalsFor: 12,
-    goalsAgainst: 4,
-    goalDiff: 8,
-    points: 15,
-    logo: "https://via.placeholder.com/40",
-  },
-  {
-    id: 2,
-    name: "Phnom Penh Crown FC",
-    played: 5,
-    won: 4,
-    drawn: 0,
-    lost: 1,
-    goalsFor: 8,
-    goalsAgainst: 5,
-    goalDiff: 3,
-    points: 12,
-    logo: "https://via.placeholder.com/40",
-  },
-  {
-    id: 3,
-    name: "Boeungket FC",
-    played: 5,
-    won: 3,
-    drawn: 1,
-    lost: 1,
-    goalsFor: 12,
-    goalsAgainst: 6,
-    goalDiff: 6,
-    points: 10,
-    logo: "https://via.placeholder.com/40",
-  },
-
-];
+import React, { useEffect, useState } from "react";
 
 const LeagueTable = () => {
+  const [teams, setTeams] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const apiUrl = "http://localhost:3000/teams";
+
+    fetch(apiUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch data from API");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setTeams(data); 
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching data:", err);
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div className="text-center mt-10">Loading league table...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center mt-10 text-red-600">Error: {error}</div>;
+  }
+
   return (
     <div className="container mx-auto my-12 p-4 md:p-8 bg-white rounded-lg shadow-lg">
       <div className="text-center mb-6">
         <h1 className="text-4xl font-bold text-gray-800 uppercase">
           Cambodian Premier League
         </h1>
-        <h2 className="text-2xl font-bold text-blue-600 mt-5 ">Season 2024-25</h2>
+        <h2 className="text-2xl font-bold text-blue-600 mt-5">Season 2024-25</h2>
       </div>
 
       <div className="overflow-x-auto">
@@ -85,7 +75,7 @@ const LeagueTable = () => {
                   <img
                     src={team.logo}
                     alt={team.name}
-                    className="w-8 h-8 rounded-full object-cover"
+                    className="w-8 h-9 object-cover"
                   />
                   <span className="font-semibold text-gray-800">{team.name}</span>
                 </td>

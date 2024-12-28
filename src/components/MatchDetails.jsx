@@ -2,6 +2,10 @@ const MatchDetails = () => {
   const matches = [
     { title: 'Team A vs Team B', date: '10th Dec', venue: 'Stadium X' },
     { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
+    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
+    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
+    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
+    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
   ];
 
   return (

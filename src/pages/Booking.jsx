@@ -4,6 +4,10 @@ import MatchCard from '../components/MatchCard';
 const matches = [
   { id: 1, title: 'Team A vs Team B', date: '10th Dec', venue: 'Stadium X' },
   { id: 2, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
+  { id: 3, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
+  { id: 4, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
+  { id: 5, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
+  { id: 6, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
 ];
 
 const seatPrices = {
@@ -121,7 +125,7 @@ const Booking = () => {
 
                 {/* Seat Type */}
                 <div>
-                  <label className="block font-medium">Seat Zone</label>
+                  <label className="block font-medium">Seat Type</label>
                   <select
                     name="seatType"
                     value={formData.seatType}

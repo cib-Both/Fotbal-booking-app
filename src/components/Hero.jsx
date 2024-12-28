@@ -4,7 +4,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className=" bg-blue-600 h-screen flex items-center justify-center text-center">
+    <div className="h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-500 to-blue-900 ">
       <div className="text-white px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Experience Live Football</h1>
         <p className="text-lg md:text-xl mb-8">
