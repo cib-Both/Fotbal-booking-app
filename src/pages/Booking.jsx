@@ -2,18 +2,16 @@ import { useState } from 'react';
 import MatchCard from '../components/MatchCard';
 
 const matches = [
-  { id: 1, title: 'Team A vs Team B', date: '10th Dec', venue: 'Stadium X' },
-  { id: 2, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
-  { id: 3, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
-  { id: 4, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
-  { id: 5, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
-  { id: 6, title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium: Cambodia national' },
+  { id: 1, title: 'Visakha vs Ministry FA', date: 'Jun 14, 6:00PM', venue: 'Prince Stadium' },
+  { id: 2, title: 'Angkor Tiger FC vs Life FC', date: 'Jun 15, 7:00 pm', venue: 'AIA Stadium' },
+  { id: 3, title: 'Phnom Penh Crown vs Nagaworld', date: 'Jun 20, 6:00PM', venue: 'Smart RSN Stadium' },
+  { id: 4, title: 'Boeung Ket vs ISI Dangkor Senchey', date: 'Jun 22, 5:00PM', venue: 'Olympic Stadium'}
 ];
 
 const seatPrices = {
-  VIP: 100,
-  Mid: 70,
-  Standard: 50,
+  VIP: 20,
+  Mid: 10,
+  Standard: 5,
 };
 
 const Booking = () => {

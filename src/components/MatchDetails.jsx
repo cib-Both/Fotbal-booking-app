@@ -1,11 +1,9 @@
 const MatchDetails = () => {
   const matches = [
-    { title: 'Team A vs Team B', date: '10th Dec', venue: 'Stadium X' },
-    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
-    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
-    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
-    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
-    { title: 'Team C vs Team D', date: '15th Dec', venue: 'Stadium Y' },
+    { title: 'Visakha vs Ministry FA', date: 'Jun 14, 6:00PM', venue: 'Prince Stadium' },
+    { title: 'Angkor Tiger vs Life FC', date: 'Jun 15, 7:00 pm', venue: 'AIA Stadium' },
+    { title: 'Phnom Penh Crown vs Nagaworld', date: 'Jun 20, 6:00PM', venue: 'Smart RSN Stadium' },
+    { title: 'Boeung Ket vs ISI Dangkor Senchey', date: 'Jun 22, 5:00PM', venue: 'Olympic Stadium' },
   ];
 
   return (

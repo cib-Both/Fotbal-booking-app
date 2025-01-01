@@ -6,28 +6,28 @@ const ConnectWithUs = () => {
       icon: <FaPhone />,
       method: 'Phone',
       contact: '123-456-7890',
-      link: 'tel:123-456-7890',
+      link: ' ', // link to
       color: 'bg-green-500',
     },
     {
       icon: <FaTelegramPlane />,
       method: 'Telegram',
       contact: '@FootballBooking',
-      link: 'https://t.me/FootballBooking',
+      link: ' ', // link to
       color: 'bg-blue-400',
     },
     {
       icon: <FaFacebookF />,
       method: 'Facebook',
       contact: 'Football Booking',
-      link: 'https://facebook.com/FootballBooking',
+      link: ' ', // link to
       color: 'bg-blue-600',
     },
     {
       icon: <FaEnvelope />,
       method: 'Email',
       contact: 'info@footballbooking.com',
-      link: 'mailto:info@footballbooking.com',
+      link: ' ', // link to
       color: 'bg-red-500',
     },
   ];

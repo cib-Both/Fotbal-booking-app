@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
         <button
           onClick={() => navigate('/booking')}
-          className="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-gray-100 transition"
+          className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-gray-100 transition"
         >
           Book Now
         </button>
