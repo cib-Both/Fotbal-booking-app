@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MatchCard from '../components/MatchCard';
+import tickets from '../assets/tickets.png'
 
 const matches = [
   { id: 1, title: 'Visakha vs Ministry FA', date: 'Jun 14, 6:00PM', venue: 'Prince Stadium' },
@@ -54,7 +55,10 @@ const Booking = () => {
   return (
     <div className="pt-10 pb-60 bg-gray-50">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Book Your Tickets</h2>
+       <div className="flex space-x-1 items-center">
+         <h2 className="text-3xl font-bold mb-8">Book Your Tickets</h2>
+         <img src={tickets} alt="Ticket" className="h-8 mb-8" />
+       </div>  
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {matches.map((match) => (
             <MatchCard key={match.id} match={match} onBook={() => handleBookNow(match)} />
@@ -117,7 +121,7 @@ const Booking = () => {
                     value={formData.tickets}
                     onChange={handleFormChange}
                     required
-                    className="w-full border p-2 rounded"
+                    className="w-full border p-2 rounded "
                   />
                 </div>
 

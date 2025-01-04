@@ -35,7 +35,7 @@ const LeagueTable = () => {
   }
 
   return (
-    <div className="container mx-auto my-12 p-4 md:p-8 bg-white rounded-lg shadow-lg">
+    <div className="container mx-auto my-12 p-4 md:p-8 bg-gray-50 rounded-lg shadow-xl">
       <div className="text-center mb-6">
         <h1 className="text-4xl font-bold text-gray-800 uppercase">
           Cambodian Premier League

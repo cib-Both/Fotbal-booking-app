@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <MatchDetails />
       <AboutUs />
+      <MatchDetails />
       <LeagueTable />
     </>
   );

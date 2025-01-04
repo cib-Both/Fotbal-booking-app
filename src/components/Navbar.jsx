@@ -7,7 +7,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-blue-950 text-white p-4">
+    <nav className="bg-blue-950 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
            <img src={logo} alt="Logo"  className="rounded-full h-10 w-10 object-contain"/>
@@ -28,7 +28,7 @@ const Navbar = () => {
               isActive("/connect") ? "text-yellow-400" : ""
             }`}
           >
-            Connect
+            Contact Us
           </Link>
           <Link
             to="/booking"

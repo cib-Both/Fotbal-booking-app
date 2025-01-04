@@ -37,7 +37,7 @@ const ConnectWithUs = () => {
       <div className="container mx-auto text-center">
 
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-          Connect With Us
+          Contact With Us
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
           Have questions or need assistance? Reach out to us through any of the following channels. 
