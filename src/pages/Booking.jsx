@@ -3,10 +3,10 @@ import MatchCard from '../components/MatchCard';
 import tickets from '../assets/tickets.png'
 
 const matches = [
-  { id: 1, title: 'Visakha vs Ministry FA', date: 'Jun 14, 6:00PM', venue: 'Prince Stadium' },
-  { id: 2, title: 'Angkor Tiger FC vs Life FC', date: 'Jun 15, 7:00 pm', venue: 'AIA Stadium' },
-  { id: 3, title: 'Phnom Penh Crown vs Nagaworld', date: 'Jun 20, 6:00PM', venue: 'Smart RSN Stadium' },
-  { id: 4, title: 'Boeung Ket vs ISI Dangkor Senchey', date: 'Jun 22, 5:00PM', venue: 'Olympic Stadium'}
+  { id: 1, title: 'Visakha vs Ministry FA', date: 'Jun 14, 6:00PM', venue: 'Prince Stadium', image: 'https://pbs.twimg.com/media/FLKehzhVcAIHL8X?format=jpg&name=large' },
+  { id: 2, title: 'Angkor Tiger FC vs Life FC', date: 'Jun 15, 7:00PM', venue: 'AIA Stadium', image: 'https://cdn.sabay.com/cdn/media.sabay.com/media/sabay-news/Sport-News/Local-Sports/Event/KMH-Champions/636535f27f156_1667577300_medium.jpg' },
+  { id: 3, title: 'Phnom Penh Crown vs Nagaworld', date: 'Jun 20, 6:00PM', venue: 'Smart RSN Stadium', image: 'https://th.bing.com/th/id/R.e34f6fa40a1490dbab571ee8d2684d3f?rik=yRELsldeGw%2b0Kg&riu=http%3a%2f%2fimage.freshnewsasia.com%2f2019%2fPapa%2ffn-2019-03-25-20-37-06-6.jpg&ehk=V0pamovejYa3FUhLKJIoB0GTVLy9Uy5Z%2fsLgzg0vIwg%3d&risl=&pid=ImgRaw&r=0' },
+
 ];
 
 const seatPrices = {

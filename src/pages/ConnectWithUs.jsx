@@ -33,7 +33,7 @@ const ConnectWithUs = () => {
   ];
 
   return (
-    <div className="pt-16 pb-64 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="pt-16 pb-10 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="container mx-auto text-center">
 
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
