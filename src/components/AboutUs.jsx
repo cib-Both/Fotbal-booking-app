@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Logo from '../assets/logo.png';
 
 const AboutUs = () => {
   const navi = useNavigate();
@@ -33,11 +34,10 @@ const AboutUs = () => {
         <div className="lg:w-1/2 mt-8 lg:mt-0">
           <div className="relative group">
             <img
-              src="https://stadiumdb.com/pic-projects/cambodia_national_stadium/cambodia_national_stadium08.jpg"
+              src={Logo}
               alt="Stadium"
               className="rounded-lg shadow-lg object-cover w-full h-96"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
         </div>
       </div>

@@ -1,15 +1,15 @@
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
-import MatchDetails from '../components/MatchDetails';
-import LeagueTable from '../components/LeagueTable';
+import League from '../components/League';
+import UpComingMatch from '../components/UpComingMatch';
 
 const Home = () => {
   return (
     <>
       <Hero />
       <AboutUs />
-      <MatchDetails />
-      <LeagueTable />
+      <UpComingMatch />
+      <League />
     </>
   );
 };

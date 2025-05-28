@@ -1,72 +1,112 @@
-import { FaPhone, FaTelegramPlane, FaFacebookF, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaTelegramPlane, FaFacebookF, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import ContactForm from '../components/contact-form';
 
 const ConnectWithUs = () => {
   const contactMethods = [
     {
-      icon: <FaPhone />,
+      icon: <FaPhone className="text-xl" />,
       method: 'Phone',
-      contact: '123-456-7890',
-      link: ' ', // link to
-      color: 'bg-green-500',
+      contact: '+1 (123) 456-7890',
+      link: '#',
+      color: 'bg-green-100 text-green-600',
+      action: 'Call Now'
     },
     {
-      icon: <FaTelegramPlane />,
+      icon: <FaWhatsapp className="text-xl" />,
+      method: 'WhatsApp',
+      contact: '+1 (123) 456-7890',
+      link: '#',
+      color: 'bg-green-100 text-green-600',
+      action: 'Message Us'
+    },
+    {
+      icon: <FaTelegramPlane className="text-xl" />,
       method: 'Telegram',
       contact: '@FootballBooking',
-      link: ' ', // link to
-      color: 'bg-blue-400',
+      link: '#',
+      color: 'bg-blue-100 text-blue-600',
+      action: 'Join Channel'
     },
     {
-      icon: <FaFacebookF />,
+      icon: <FaFacebookF className="text-xl" />,
       method: 'Facebook',
       contact: 'Football Booking',
-      link: ' ', // link to
-      color: 'bg-blue-600',
+      link: '#',
+      color: 'bg-blue-100 text-blue-600',
+      action: 'Follow Us'
     },
     {
-      icon: <FaEnvelope />,
+      icon: <FaEnvelope className="text-xl" />,
       method: 'Email',
       contact: 'info@footballbooking.com',
-      link: ' ', // link to
-      color: 'bg-red-500',
+      link: '#',
+      color: 'bg-red-100 text-red-600',
+      action: 'Send Email'
+    },
+    {
+      icon: <FaMapMarkerAlt className="text-xl" />,
+      method: 'Office',
+      contact: '123 Stadium Ave, Sports City',
+      link: '#',
+      color: 'bg-purple-100 text-purple-600',
+      action: 'Get Directions'
     },
   ];
 
   return (
-    <div className="pt-16 pb-10 bg-gradient-to-b from-gray-50 to-gray-100">
-      <div className="container mx-auto text-center">
+    <div className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Connect With Us
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            We're here to help! Choose your preferred way to get in touch.
+          </p>
+        </div>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-          Contact With Us
-        </h2>
-        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
-          Have questions or need assistance? Reach out to us through any of the following channels. 
-          We're here to help!
-        </p>
-
-
-        {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {contactMethods.map((item, index) => (
             <a
               key={index}
               href={item.link}
-              aria-label={item.method}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300`}
+              className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:border-blue-500 transition-colors"
             >
-              <div
-                className={`w-16 h-16 mx-auto flex items-center justify-center text-white text-3xl rounded-full mb-4 ${item.color} group-hover:brightness-110`}
-              >
-                {item.icon}
+              <div className="p-6">
+                <div className="flex items-start">
+                  <div className={`p-3 rounded-lg ${item.color} mr-4`}>
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                      {item.method}
+                    </h3>
+                    <p className="text-gray-600 mb-4">{item.contact}</p>
+                    <span className={`inline-block px-3 py-1 text-sm font-medium rounded-md ${item.color}`}>
+                      {item.action}
+                    </span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600">
-                {item.method}
-              </h3>
-              <p className="text-gray-600 group-hover:text-gray-800">{item.contact}</p>
             </a>
           ))}
+        </div>
+
+        <div className="mt-12 bg-white rounded-lg border border-gray-200 p-8 max-w-4xl mx-auto">
+          <h3 className="text-xl font-bold text-center mb-4 text-gray-800">
+            Send Us a Message
+          </h3>
+          <p className="text-center text-gray-600 mb-6">
+            Have questions? Fill out our contact form and we'll respond promptly.
+          </p>
+          <div className="text-center">
+           <>
+           <ContactForm/>
+           </>
+          </div>
         </div>
       </div>
     </div>
