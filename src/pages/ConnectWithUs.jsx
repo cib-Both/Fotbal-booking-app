@@ -1,5 +1,5 @@
 import { FaPhone, FaTelegramPlane, FaFacebookF, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
-import ContactForm from '../components/contact-form';
+import ContactForm from '../components/ContactForm';
 
 const ConnectWithUs = () => {
   const contactMethods = [
