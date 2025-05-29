@@ -7,7 +7,7 @@ const ConnectWithUs = () => {
       icon: <FaPhone className="text-xl" />,
       method: 'Phone',
       contact: '+1 (123) 456-7890',
-      link: '#',
+      link: '/',
       color: 'bg-green-100 text-green-600',
       action: 'Call Now'
     },
@@ -15,7 +15,7 @@ const ConnectWithUs = () => {
       icon: <FaWhatsapp className="text-xl" />,
       method: 'WhatsApp',
       contact: '+1 (123) 456-7890',
-      link: '#',
+      link: '/',
       color: 'bg-green-100 text-green-600',
       action: 'Message Us'
     },
@@ -23,7 +23,7 @@ const ConnectWithUs = () => {
       icon: <FaTelegramPlane className="text-xl" />,
       method: 'Telegram',
       contact: '@FootballBooking',
-      link: '#',
+      link: '/',
       color: 'bg-blue-100 text-blue-600',
       action: 'Join Channel'
     },
@@ -31,7 +31,7 @@ const ConnectWithUs = () => {
       icon: <FaFacebookF className="text-xl" />,
       method: 'Facebook',
       contact: 'Football Booking',
-      link: '#',
+      link: '/',
       color: 'bg-blue-100 text-blue-600',
       action: 'Follow Us'
     },
@@ -39,7 +39,7 @@ const ConnectWithUs = () => {
       icon: <FaEnvelope className="text-xl" />,
       method: 'Email',
       contact: 'info@footballbooking.com',
-      link: '#',
+      link: '/',
       color: 'bg-red-100 text-red-600',
       action: 'Send Email'
     },
@@ -47,7 +47,7 @@ const ConnectWithUs = () => {
       icon: <FaMapMarkerAlt className="text-xl" />,
       method: 'Office',
       contact: '123 Stadium Ave, Sports City',
-      link: '#',
+      link: '/',
       color: 'bg-purple-100 text-purple-600',
       action: 'Get Directions'
     },

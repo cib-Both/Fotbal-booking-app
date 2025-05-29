@@ -1,4 +1,6 @@
 import logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-white rounded-lg shadow dark:bg-blue-950 m-4">
@@ -12,19 +14,19 @@ const Footer = () => {
         </div>    
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-300">
             <li>
-              <a href="/" className="hover:underline me-4 md:me-6">
+              <Link to="/" className="hover:underline me-4 md:me-6">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/Matches " className="hover:underline me-4 md:me-6">
+              <Link to="/matches" className="hover:underline me-4 md:me-6">
                 Matches
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/connect " className="hover:underline me-4 md:me-6">
+              <Link to="/connect" className="hover:underline me-4 md:me-6">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
